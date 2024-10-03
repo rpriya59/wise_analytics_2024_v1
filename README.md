@@ -44,6 +44,53 @@ This document outlines the data transformations applied to calculate various add
      - Total distance covered on all trips for the given day.
      - Total amount earned on the day.
      - Passenger count on the given day.
+# Exploratory Data Analysis (EDA) on Cab Trip Data
+
+## Overview
+
+This project performs an exploratory data analysis (EDA) on a dataset containing cab trip records. The analysis focuses on understanding key metrics such as passenger count, average fare, trip hour, and related trends. The insights derived from this analysis can help in making data-driven decisions related to cab services.
+
+## Dataset
+
+The dataset includes the following columns:
+
+- **VendorID**: ID of the cab vendor (int32)
+- **tpep_pickup_datetime**: Pickup date and time (timestamp[us])
+- **tpep_dropoff_datetime**: Drop-off date and time (timestamp[us])
+- **passenger_count**: Number of passengers (int64)
+- **trip_distance**: Distance of the trip (double)
+- **RatecodeID**: Rate code (int64)
+- **store_and_fwd_flag**: Indicates if the trip was stored for future forwarding (string)
+- **PULocationID**: Pickup location ID (int32)
+- **DOLocationID**: Drop-off location ID (int32)
+- **payment_type**: Type of payment (int64)
+- **fare_amount**: Base fare amount (double)
+- **extra**: Extra charges (double)
+- **mta_tax**: MTA tax (double)
+- **tip_amount**: Tip amount (double)
+- **tolls_amount**: Tolls amount (double)
+- **improvement_surcharge**: Improvement surcharge (double)
+- **total_amount**: Total fare amount (double)
+- **congestion_surcharge**: Congestion surcharge (double)
+- **Airport_fee**: Airport fee (double)
+
+## EDA Insights
+
+### Key Metrics Analyzed
+1. **Passenger Count**: Distribution of the number of passengers per trip.
+2. **Average Fare**: Analysis of average fare amounts across different hours and days.
+3. **Trip Hour**: Understanding the distribution of trips by hour of the day.
+4. **Pickup Trends**: Insights into peak hours and days for cab pickups.
+
+### Visualizations
+
+1. **Passenger Count Distribution**:
+   - A bar chart showing the distribution of passenger counts across trips.
+   - Helps identify the most common passenger counts.
+
+2. **Average Fare Amount by Pickup Hour**:
+   - A combined bar and line chart displaying the average fare amount and number of pickups per hour.
+   - Provides insights into fare trends throughout the day.
 
 ## Usage
 
